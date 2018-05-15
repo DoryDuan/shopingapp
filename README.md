@@ -23,7 +23,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 我的笔记
 AMD（异步模块定义）是RequireJS在推广过程中对模块定义的规范化产出物，依赖前置
 CMD(同步模块定义)是SeaJS在推广过程中对模块定义的规范化产出物，依赖就近
-CommonJs规范-通过module.exports来定义，前端浏览器不支持，在nodeJS后端使用的（module.exports,exports.name两种输出方式）
+CommonJs规范-通过module.exports来定义，前端浏览器不支持，在nodeJS后端使用的（module.exports(默认输出),exports.name两种输出方式）
 
 公共的组件放components里面，页面放views里面
 项目目录里面src里面的assets和static的区别：assets放组件的资源，里面的资源会进行打包，图片足够小会生成base64，static放页面的资源，不会打包成base64
@@ -31,3 +31,8 @@ CommonJs规范-通过module.exports来定义，前端浏览器不支持，在nod
 mock数据的渲染
 方法一：build/dev-server.js 可参考vue-music项目
 方法二：build/webpack.dev.conf.js  https://segmentfault.com/q/1010000011988039
+
+linux环境下安装node  https://www.cnblogs.com/zlfProgrammer/p/8023308.html
+
+node是基于Chrom v8引擎的，Chrom v8引擎支持大多数的es6语法，我们在node里面可以直接写es6语法，而不需要编译
+
